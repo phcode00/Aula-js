@@ -176,3 +176,89 @@ ex: 75 - recuperação e 105 - nota invalida
 //     if (numero3 > maior) maior = numero3;
 //     console.log("O maior numero é:" + maior)
 // }
+
+// Peça dois números e uma operação (+, -, *, /). Use switch para calcular, 
+// com default para operações inválidas e checagem de divisão por zero.
+
+// const valor1 = Number(prompt("Digite o primerio numero: "));
+// const valor2 = Number(prompt("Digite o segundo valor"));
+
+// const operador = prompt("Digite uma operação (+,-,*,/): ");
+// let resultado;
+
+// if (Number.isNaN(valor1) || Number.isNaN(valor2)) {
+//     console.log("Digite apenas numeros!")
+// } else {
+
+//     switch (operador) {
+//         case "+":
+//             resultado = valor1 + valor2;
+//             console.log(`Resultado ${resultado}`)
+//         case "-":
+//             resultado = valor1 - valor2;
+//             console.log(`Resultado ${resultado}`)
+//         case "*":
+//             resultado = valor1 * valor2;
+//             console.log(`Resultado ${resultado}`)
+//         case "/":
+//             resultado = valor1 / valor2;
+//             console.log(`Resultado ${resultado}`)
+//             break;
+//         case "/"
+//             if (valor2 === 0) {
+//                 console.log("Divisão feita por zero não é permitida")
+//             } else {
+//                 resultado = valor1 / valor2
+//                 console.log(`Resultado: ${resultado}`)
+//             }
+//             break;
+//         default:
+//             console.log("Operação invalida:")
+// }
+//errado arrumar
+
+// const valor1 = Number(prompt("Digite o primeiro número: "));
+// const valor2 = Number(prompt("Digite o segundo número: "));
+
+// const operador = prompt("Digite uma operação (+, -, *, /): ");
+
+// let resultado;
+
+// if (
+//     Number.isNaN(valor1) ||
+//     Number.isNaN(valor2) ||
+//     valor1.toString().trim() === "" ||
+//     valor2.toString().trim() === ""
+// ) {
+//     console.log("Digite apenas números!");
+// } else {
+//     switch (operador) {
+//         case "+":
+//             resultado = valor1 + valor2;
+//             console.log(`Resultado: ${resultado}`);
+//             break;
+
+//         case "-":
+//             resultado = valor1 - valor2;
+//             console.log(`Resultado: ${resultado}`);
+//             break;
+
+//         case "*":
+//             resultado = valor1 * valor2;
+//             console.log(`Resultado: ${resultado}`);
+//             break;
+
+//         case "/":
+//             if (valor2 === 0) {
+//                 console.log("Divisão por zero não é permitida!");
+//             } else {
+//                 resultado = valor1 / valor2;
+//                 console.log(`Resultado: ${resultado}`);
+//             }
+//             break;
+
+//         default:
+//             console.log("Operação inválida!");
+//     }
+// }
+
