@@ -50,15 +50,88 @@ console.log(area)
 // Crie `contarVogais(texto)` que devolve quantas vogais (a, e, i, o, u) o texto tem, sem diferenciar maiúsculas de minúsculas.
 // **Exemplo:** `contarVogais("JavaScript")` devolve `3`
 
-function contarVogais(texto) {
-    const vogais = "aeiou";
-    let total = 0;
+// function contarVogais(texto) {
+//     const vogais = "aeiou";
+//     let total = 0;
 
-    for (const letra of texto.contarVogais()) {
-        if (vogais.includes(vogais)) {
-            total++
-        }
-    }
-    return total;
-}
-console.log(contarVogais("senai"));
+//     for (const letra of texto.toLowerCase()) {
+//         if (vogais.includes(vogais)) {
+//             total++
+//         }
+//     }
+//     return total;
+// }
+// console.log(contarVogais("senai"));
+
+// Crie `inverter(texto)` que devolve o texto de trás para frente. Depois crie `ehPalindromo(texto)` que **usa** `inverter` e devolve `true` ou `false`, ignorando maiúsculas.
+
+// **Exemplo:** ehPalindromo("Arara")` devolve `true`; `ehPalindromo("Casa")` devolve `false`
+
+// function inverter(texto) {
+//     let invertido = ""
+//     for (let i = texto.length -1; i >= 0; i--) {
+//         invertido += texto[i]
+//     }
+//     return invertido;
+// }
+
+// function ehPalindromo(texto) {
+//     const normal = texto.toLowerCase();
+//     return normal === inverter(normal);
+// }
+
+// console.log(ehPalindromo("arara"));
+
+// Crie `depositar(saldo, valor)` e `sacar(saldo, valor)`, cada uma **devolvendo o novo saldo**.
+//  O saque deve ser recusado (mostrando uma mensagem e mantendo o saldo) se o valor for inválido ou maior que o saldo.
+//  Depois, desafie-se a encaixá-las no menu com `do...while` da aula de repetição.
+
+// **Exemplo:** saldo `100` → depositar `50` → sacar `30` → sacar `500` → saldo final `120`
+
+// function depositar(saldo, valor) {
+//     if (valor <= 0) {
+//         console.log("Valor de depósito inválido");
+//         return saldo
+//     }
+//     return saldo + valor;
+// }
+// function sacar(saldo, valor) {
+//     if (saldo <= 0 || valor > saldo) {
+//         console.log("Operação não permitida.");
+//         return saldo
+//     }
+
+//     return saldo - valor;
+// }
+
+// let saldo = 100;
+// saldo = depositar(saldo, 50);
+// saldo = sacar(saldo, 30);
+// saldo = sacar(saldo, 500);
+// console.log("Saldo final:", saldo);
+
+// Crie um objeto `operacoes` em que cada chave é um símbolo (`"+"`, `"-"`, `"*"`, `"/"`) e cada valor é uma arrow function. 
+// Depois crie `calcular(a, op, b)` que escolhe a função certa.
+//  Devolva `null` para operação desconhecida ou divisão por zero.
+
+// **Exemplo:** `calcular(10, "+", 5)` devolve `15`; `calcular(10, "/", 0)` devolve `null`
+
+// const operacao = {
+//     "+": (a, b) => a + b,
+//     "-": (a, b) => a - b,
+//     "*": (a, b) => a * b,
+//     "/": (a, b) => (b === 0 ? null : a / b),
+// };
+
+// function calcular(a, op, b) {
+//     const funcao = operacao[op];
+//     if (!funcao) {
+//         return null
+//     }
+
+//     return funcao(a, b)
+// }
+
+// console.log(calcular(10, "+", 5));
+// console.log(calcular(10, "/", 0));
+
