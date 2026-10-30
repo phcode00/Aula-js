@@ -139,23 +139,23 @@ console.log("=== Reduce ===");
 
 // }, valorInicial);
 
-const somaIdades = people.reduce((acc, value, index, array) => {
-    console.log("Index:", index);
-    console.log("Index:", value.name, value.age);
-    console.log("Acumulador antes:", acc);
-    return acc + value.age;
-}, 0)
+// const somaIdades = people.reduce((acc, value, index, array) => {
+//     console.log("Index:", index);
+//     console.log("Index:", value.name, value.age);
+//     console.log("Acumulador antes:", acc);
+//     return acc + value.age;
+// }, 0)
 
-console.log("Resultdo reduce:", somaIdades);
+// console.log("Resultdo reduce:", somaIdades);
 
-const nomesMaiores = people
-.filter(p => p.age >= 18)
-.map(p => p.name.toUpperCase());
+// const nomesMaiores = people
+// .filter(p => p.age >= 18)
+// .map(p => p.name.toUpperCase());
 
-console.log(nomesMaiores);
+// console.log(nomesMaiores);
 
-const somaMaiores = people
-.filter(p => p.age >= 18)
-.reduce((acc, p) => acc + p.age, 0);
+// const somaMaiores = people
+// .filter(p => p.age >= 18)
+// .reduce((acc, p) => acc + p.age, 0);
 
-console.log(somaMaiores);
+// console.log(somaMaiores);
